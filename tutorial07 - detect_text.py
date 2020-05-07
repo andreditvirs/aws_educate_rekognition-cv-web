@@ -18,8 +18,8 @@ response = client.detect_text(Image={'Bytes' : source_bytes})
 width_shape = img.shape[1]
 height_shape = img.shape[0]
 
+i=0
 for key, value in response.items():
-	i=0
 	if key == 'TextDetections':
 		for teks in value:
 			for key, value in teks.items():
